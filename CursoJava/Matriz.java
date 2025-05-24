@@ -1,3 +1,4 @@
+package CursoJava;
 import java.security.SecureRandom;
 public class Matriz {
     public static void main(String[] args) {
