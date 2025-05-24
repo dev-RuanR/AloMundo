@@ -3,12 +3,17 @@ package CursoJava.Classe;
 public class Time{
    public static void main(String[] args) {
 
-      Jogador jogador1 = new Jogador(10); // instanciando a classe Jogador;
+      int num = 0;
+      Jogador jogador1 = new Jogador(++num); // instanciando a classe Jogador;
+      Jogador jogador2 = new Jogador(++num); // instanciando a classe Jogador;
+      Jogador jogador3 = new Jogador(++num); // instanciando a classe Jogador;
 
-   
-      jogador1.nome = "Ruan";
-      System.out.printf("%n"+jogador1.nome); // acessando o atributo nome do objeto jogador1;
-    
+      jogador1.addVidas(); // adiciona uma vida ao jogador 1;
+      jogador1.addVidas(); // adiciona uma vida ao jogador 1;
+      jogador1.addVidas(); // O jogador ainda tem 3 vidas, então não adiciona mais uma vida;
+      System.out.printf("%n Vidas do jogador 1: " + jogador1.getVidas()); // imprime o número de vidas do jogador 1;
+      System.out.printf("%n Vidas do jogador 2: " + jogador2.getVidas()); // imprime o número de vidas do jogador 2;
+      System.out.printf("%n Vidas do jogador 3: " + jogador3.getVidas()); // imprime o número de vidas do jogador 3; 
    }
 }
 
