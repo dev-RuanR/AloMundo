@@ -3,7 +3,11 @@ package CursoJava.Classe;
 public class Time{
    public static void main(String[] args) {
 
-    Jogador jogador1 = new Jogador(10); // instanciando a classe Jogador;
+      Jogador jogador1 = new Jogador(10); // instanciando a classe Jogador;
+
+   
+      jogador1.nome = "Ruan";
+      System.out.printf("%n"+jogador1.nome); // acessando o atributo nome do objeto jogador1;
     
    }
 }
